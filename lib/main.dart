@@ -2,6 +2,7 @@ import 'package:camera/camera.dart';
 import 'Screens/CameraScreen.dart';
 import 'package:flutter/material.dart';
 import 'Screens/HomeScreens.dart';
+import 'LandingScreen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
           color: Color(0xFF075E54),
         )
       ),
-      home: Homescreen(),
+      home: LandingScreen(),
     );
   }
 }

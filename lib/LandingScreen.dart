@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/LoginPage.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -62,7 +63,8 @@ class LandingScreen extends StatelessWidget {
               InkWell(
                 onTap: ()
                 {
-
+                  Navigator.pushAndRemoveUntil(context,MaterialPageRoute(builder: (builder) =>LoginPage()),
+                          (route) =>false);
                 },
                 child: Container(
                   width: MediaQuery.of(context).size.width-110,
